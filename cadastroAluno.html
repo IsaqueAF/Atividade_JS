@@ -8,19 +8,91 @@
 </head>
 <body>
     <main>
-        <fieldset>
-            <form action="#" name="formAl" method="post"></form>
+        <form action="#" name="formAl" method="post" onsubmit="return testa_form()">
+            <fieldset>
                 <legend>PREENCHER INFORMAÇÕES</legend>
 
-                <label for="aluno">Nome do corno do aluno:</label><br>
-                <input type="text">
+                <label for="nome">Nome do aluno:</label><br>
+                <input type="text" id="nome" name="nome" required>
                 <br><br>
-                <label for="data">quando esse arrombado nasceu:</label><br>
-                <input type="date">
-            </form>
-        </fieldset>
+
+                <label for="data">Data de nascimento:</label><br>
+                <input type="date" id="data" name="data" required>
+                <br><br>
+
+                <p>Qual é o seu sexo:</p>
+                <input type="radio" value="masculino" id="sexoM" name="sexo" required>
+                <label for="sexoM">masculino</label>
+                <input type="radio" value="feminino" id="sexoF" name="sexo" required>
+                <label for="sexoF">feminino</label>
+                <br><br>
+
+                <label for="cpf">Qual é o seu CPF?</label><br>
+                <input type="text" id="cpf" name="cpf" placeholder="123.456.789-10" autocomplete="false" required>
+                <br><br>
+
+                <label for="endereco">Qual é o seu endereço?</label><br>
+                <input type="text" id="endereco" name="endereco" required>
+                <br><br>
+
+                <label for="complemento">Complemento:</label><br>
+                <input type="text" id="complemento" name="complemento" required>
+                <br><br>
+
+                <label for="cep">CEP:</label><br>
+                <input type="text" id="cep" name="cep" placeholder="12345-678" autocomplete="false" required>
+                <br><br>
+
+                <label for="bairro">Bairro:</label><br>
+                <input type="text" id="bairro" name="bairro" required>
+                <br><br>
+
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" id="cidade" name="cidade" required>
+                <br><br>
+
+                <label for="estado">Estado:</label><br>
+                <select name="estado" id="estado" required>
+                    <option value="">Selecione um estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" autocomplete="false" required>
+                <br><br>
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
     </main>
     <script src="script/script.js"></script>
-    
 </body>
 </html>
