@@ -1,0 +1,68 @@
+@font-face {
+    font-family: kindly;
+    src: url(../font/Super\ Kindly.ttf);
+}
+
+*{
+    margin: 0;
+}
+body {
+    background-color:#500066;
+}
+
+header {
+    justify-self: center;
+    background-color: #D976F5;
+    position: relative;
+    width: 100%; height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+header a {
+    color: #774086;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login {
+    margin-right: 40px;
+}
+
+.run {
+    position: relative;
+    width: 100%; height: 300px;
+    background: linear-gradient(to top, #500066, rgb(243, 41, 135));
+    overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+h1{
+  text-align: center;
+}

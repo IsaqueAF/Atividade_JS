@@ -1,0 +1,17 @@
+@media (max-width: 800px) {
+    * {
+        font-size: .8em;
+    }
+
+    header ul li {
+        margin-right: 2em;
+    }
+
+    header ul {
+        padding-inline-start: 2em;
+    }
+
+    .login {
+        margin-right: 4em;
+    }
+}
